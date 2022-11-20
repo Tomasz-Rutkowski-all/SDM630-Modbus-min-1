@@ -3,7 +3,7 @@ SDM230-Modbus  Multifunction Power Analyser WithRS485 Port modbus RTU for the do
 
 Installation: <br>
 cd ~/domoticz/plugins<br>
-git clone https://github.com/MFxMF/SDM630-Modbus <br>
+git clone https://github.com/Tomasz-Rutkowski-all/SDM630-Modbus <br>
 
 <br>
 Used python modules: <br>
