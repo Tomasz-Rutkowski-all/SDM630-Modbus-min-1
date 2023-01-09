@@ -1,5 +1,5 @@
-# SDM230-Modbus
-SDM230-Modbus  Multifunction Power Analyser WithRS485 Port modbus RTU for the domoticz plugin
+# SDM630-Modbus
+SDM630-Modbus  Multifunction Power Analyser WithRS485 Port modbus RTU for the domoticz plugin
 
 Installation: <br>
 cd ~/domoticz/plugins<br>
