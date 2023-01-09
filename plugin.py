@@ -50,6 +50,7 @@ class BasePlugin:
         devicecreated = []
         Domoticz.Log("Eastron SDM630 Modbus plugin start")
         self.runInterval = int(Parameters["Mode3"]) * 1 
+        
         if 1 not in Devices:
             Domoticz.Device(Name="Voltage L1", Unit=1,TypeName="Voltage",Used=0).Create()
         if 2 not in Devices:
