@@ -8,7 +8,7 @@ Requirements:
     2.Communication module Modbus USB to RS485 converter module
 """
 """
-<plugin key="SDM630min" name="Eastron SDM630-Modbus-min-1" version="1.0.1" author="MFxMF">
+<plugin key="SDM630" name="Eastron SDM630-Modbus-min-1" version="1.0.1" author="MFxMF">
     <params>
         <param field="SerialPort" label="Modbus Port" width="200px" required="true" default="/dev/ttyUSB0" />
         <param field="Mode1" label="Baud rate" width="40px" required="true" default="9600"  />
