@@ -536,7 +536,7 @@ class BasePlugin:
                 Domoticz.Log('L1 total kvarh: {0:.3f} kVArh'.format(L1_total_kvarh))
                 Domoticz.Log('L2 total kvarh: {0:.3f} kVArh'.format(L2_total_kvarh))
                 Domoticz.Log('L3 total kvarh: {0:.3f} kVArh'.format(L3_total_kvarh))
-                Domoticz.Log('Active power L1: {0:.3f} W'.format(Active Power L1+L2+L3))
+               
             self.runInterval = int(Parameters["Mode3"]) * 6
 
 
