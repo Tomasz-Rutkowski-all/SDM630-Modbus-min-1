@@ -445,7 +445,7 @@ class BasePlugin:
 #                Devices[86].Update(0,str(L2_total_kvarh))
 #                Devices[87].Update(0,str(L3_total_kvarh))
                 Devices[88].Update(0,str(Total_System_Active_Power)+";"+str(Total_System_Active_Power))
-                Devices[89].Update(0,str(Active_Power_L1+Active_Power_L2+Active_Power_L3))
+                Devices[89].Update(0,str(Active_Power_L1)+str(Active_Power_L2)+str(Active_Power_L3))
 
 
             if Parameters["Mode6"] == 'Debug':
