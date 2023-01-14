@@ -253,7 +253,8 @@ class BasePlugin:
 #            Domoticz.Device(Name="L3 total kVArh", Unit=87,TypeName="Custom",Used=0,Options=Options).Create()
         if 88 not in Devices:
             Domoticz.Device(Name="Total Power Meter", Unit=88,TypeName="General",Subtype=0x1D,Used=0).Create()
-
+        if 89 not in Devices:
+            Domoticz.Device(Name="Active Power L1+L2+L3", Unit=5,TypeName="Usage",Used=0).Create()
 
 
 
@@ -444,7 +445,7 @@ class BasePlugin:
 #                Devices[86].Update(0,str(L2_total_kvarh))
 #                Devices[87].Update(0,str(L3_total_kvarh))
                 Devices[88].Update(0,str(Total_System_Active_Power)+";"+str(Total_System_Active_Power))
-
+                Devices[89].Update(0,str(Active_Power_L1+Active_Power_L2+Active_Power_L3))
 
 
             if Parameters["Mode6"] == 'Debug':
@@ -535,7 +536,7 @@ class BasePlugin:
                 Domoticz.Log('L1 total kvarh: {0:.3f} kVArh'.format(L1_total_kvarh))
                 Domoticz.Log('L2 total kvarh: {0:.3f} kVArh'.format(L2_total_kvarh))
                 Domoticz.Log('L3 total kvarh: {0:.3f} kVArh'.format(L3_total_kvarh))
-
+                Domoticz.Log('Active power L1: {0:.3f} W'.format(Active Power L1+L2+L3))
             self.runInterval = int(Parameters["Mode3"]) * 6
 
 
